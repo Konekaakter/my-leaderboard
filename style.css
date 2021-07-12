@@ -1,4 +1,146 @@
 /* font styles */
 body{
     font-family: 'Poppins', sans-serif;
+    background: #E5E5E5;
+}
+
+/* top players styles */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.container{
+    width: 870px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding-left: 33px;
+    margin-bottom: 21px;
+}
+
+.players{
+    display: grid;
+    grid-row-gap: 29px;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.section-title{
+    font-size: 18px;
+    color: #562EFF;
+    margin-top: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.players-name{
+    font-size: 18px;
+    padding-left: 16px;
+}
+hr{
+    margin-top: 30px;
+}
+
+/* top blog styles */
+
+.blogs{
+    display: grid;
+    grid-row-gap: 26px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 42px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    
+}
+.blog-thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    padding-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author p{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
+}
+
+/* courses styles */
+
+.courses{
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 24px;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-title{
+    font-size: 20px;
+}
+.course-author a{
+    font-size: 14px;
+    text-decoration: none;
+    color: tomato;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;;
+
+}
+.course-duration{
+    background-color:#ffb9c1;
+    border: 1px solid tomato;
+    border-radius: 10px
+}
+
+/* media query for mobiles */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+     .players{
+         align-items: center;
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .player{
+        flex-direction: column;
+     }
+     .blogs{
+        grid-template-columns: repeat(1, 1fr);
+     }
+     .courses{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .course-info{
+        padding-bottom: 60px;
+    }
 }
